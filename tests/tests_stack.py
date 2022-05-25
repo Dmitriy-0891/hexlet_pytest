@@ -36,3 +36,8 @@ def test_emptiness():
 
     stack.pop()
     asert not stack
+
+def test_pop_with_empty_stack():
+    stack = []
+    with pytest.raises(Indexerror):
+        stack.pop()
